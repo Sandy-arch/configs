@@ -7,7 +7,7 @@
 
 "Plugin installs using plug
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer --system-libclang' }
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'gosukiwi/vim-atom-dark'
@@ -42,8 +42,6 @@ let g:ycm_semantic_triggers = {
 
 
 "Editor settings
-
-colorscheme badwolf
 
 "autocompletion in command mode
 set wildmode=longest,list,full
